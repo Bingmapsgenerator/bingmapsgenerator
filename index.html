@@ -217,48 +217,11 @@
         }
 
         (function($) {
-
-            function rebuildmap() {
-                var map = new Microsoft.Maps.Map(document.getElementById('bing-map'), {
-                    center: new Microsoft.Maps.Location(51.50632, -0.12714),
-                    mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-                    zoom: 10
-                });
-
-                
-                /*url = "https://maps.google.com/maps?q=";
-                url += encodeURI($('#s').val());
-                url += '&t=';
-                if ($('#ic').is(':checked')) {
-                    url += 'k';
-                } else {
-                    url += '';
-                }
-                url += '&z=' + $('#zoom').val();
-                url += '&ie=UTF8&iwloc=&output=embed';
-
-                $('#formap').empty();
-
-                $('<iframe>', {
-                    src: url,
-                    id: 'gmap_canvas',
-                    frameborder: 0,
-                    scrolling: 'no',
-                    width: $('#width').val(),
-                    height: $('#height').val()
-                }).appendTo('#formap');
-                var gcode = $('#formap').html();
-                gcode += '<a href="https://embedgooglemap.github.io" style="display:none;">map generator</a>';
-                $('#gmapcode').val(gcode);*/
-            }
-
             var timer;
 
             $('select').formSelect();
             $('.modal').modal();
             $('.scrollspy').scrollSpy();
-
-            /*rebuildmap();*/
 
             function startrebuild() {
                 clearTimeout(timer);
