@@ -26,7 +26,7 @@
         }
         @media screen and (max-width:600px){
           #formap {
-            width:100%;
+            max-width:100%;
           }
         }
         i.material-icons {
@@ -267,6 +267,10 @@ Bing Maps offers satellite imagery for most of the Earth's land area and can sho
             $('#s,#zoom,#ic').on('change', startrebuild);
             $('#s').on('keyup', startrebuild);
             $("#width,#height").on("change", startrebuild);
+
+            if (window.innerWidth < $('#width').val()) {
+                $('#width').val(window.innerWidth - 21);
+            }
         })(jQuery)
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AkLj1p_g1w7lFb8lJZ-XnicObnu2-ydEpmn6eryraluxl_x3bDo0Jx6w58b7ZJt2&callback=loadMapScenario' async defer></script>
