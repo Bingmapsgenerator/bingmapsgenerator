@@ -202,13 +202,19 @@ Bing Maps offers satellite imagery for most of the Earth's land area and can sho
                 msMaps = window.Microsoft;
             }
 
+            let width = $('#width').val();
+
+            if (window.innerWidth < width) {
+                width = window.innerWidth - 21;
+            }
+
             $("#formap").css({
-                'width': $('#width').val() + 'px',
+                'width': width + 'px',
                 'height': $('#height').val() + 'px'
             });
 
             $("#map-container").css({
-                'width': $('#width').val() + 'px',
+                'width': width + 'px',
                 'height': $('#height').val() + 'px'
             });
 
@@ -267,10 +273,6 @@ Bing Maps offers satellite imagery for most of the Earth's land area and can sho
             $('#s,#zoom,#ic').on('change', startrebuild);
             $('#s').on('keyup', startrebuild);
             $("#width,#height").on("change", startrebuild);
-
-            if (window.innerWidth < $('#width').val()) {
-                $('#width').val(window.innerWidth - 21);
-            }
         })(jQuery)
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AkLj1p_g1w7lFb8lJZ-XnicObnu2-ydEpmn6eryraluxl_x3bDo0Jx6w58b7ZJt2&callback=loadMapScenario' async defer></script>
