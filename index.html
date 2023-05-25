@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Add Bing Map to Website - Bing Maps Code Generator</title>
@@ -16,6 +17,11 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+
+<link rel="icon" type="image/png" href=".images/icons/icon-152x152.png">
+<meta name="theme-color" content="#aaaa31"/>
+<link rel="manifest" href="./manifest.json"> 
     <style>
         #formap {
             overflow: hidden;
@@ -39,6 +45,7 @@
             height: 7em;
         }
     </style>
+
 </head>
 <body>
     <header class="indigo darken-4 white-text">
@@ -273,8 +280,10 @@ Bing Maps offers satellite imagery for most of the Earth's land area and can sho
             $('#s,#zoom,#ic').on('change', startrebuild);
             $('#s').on('keyup', startrebuild);
             $("#width,#height").on("change", startrebuild);
+
         })(jQuery)
     </script>
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AkLj1p_g1w7lFb8lJZ-XnicObnu2-ydEpmn6eryraluxl_x3bDo0Jx6w58b7ZJt2&callback=loadMapScenario' async defer></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
