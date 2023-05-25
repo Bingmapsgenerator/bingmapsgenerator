@@ -1,6 +1,6 @@
 {
   "name": "Embed Bing Maps Generator",
-  "short_name": "Embed Bing Maps",
+  "short_name": "Embed Maps",
   "theme_color": "#aaaa31",
   "background_color": "#fff",
   "display": "standalone",
