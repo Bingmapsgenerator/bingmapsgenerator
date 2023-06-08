@@ -481,5 +481,9 @@
       "sizes": "720x540",
       "form_factor": "wide"
     }
+  ],
+    "display_override": [
+    "window-controls-overlay",
+    "standalone"
   ]
 }
