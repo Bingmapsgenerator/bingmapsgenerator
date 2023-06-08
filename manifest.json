@@ -1,5 +1,5 @@
 {
-  "name": "Embed Bing Maps Generator",
+  "name": "Embed Maps Generator",
   "short_name": "Embed Maps",
   "theme_color": "#aaaa31",
   "background_color": "#fff",
@@ -338,12 +338,12 @@
     },
     {
       "src": "images/android/android-launchericon-144-144.png",
-      "sizes": "144x144",
-      "purpose": "any"
+      "sizes": "144x144"
     },
     {
       "src": "images/android/android-launchericon-96-96.png",
-      "sizes": "96x96"
+      "sizes": "96x96",
+      "purpose": "any"
     },
     {
       "src": "images/android/android-launchericon-72-72.png",
@@ -467,7 +467,7 @@
       "icons": [{ "src": "/images/shortcuts/und.png", "sizes": "96x96" }]
     }
   ],
-  "description": "Weather forecast information",
+  "description": "forecast information",
   "screenshots": [
     {
       "src": "/images/screenshots/screenshot1.png",
