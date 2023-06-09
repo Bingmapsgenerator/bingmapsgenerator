@@ -482,6 +482,7 @@
       "form_factor": "wide"
     }
   ],
+    "id": "com.bingmapsgenerator.my-pwa",
     "display_override": [
     "window-controls-overlay",
     "standalone"
