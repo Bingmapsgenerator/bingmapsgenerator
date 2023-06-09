@@ -481,5 +481,15 @@
       "sizes": "720x540",
       "form_factor": "wide"
     }
-  ]
+  ],
+    "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+    "edge_side_panel": {
+    "preferred_width": 1
+  },
+    "dir": "auto",
+    "lang": "en",
+    "prefer_related_applications": true
 }
