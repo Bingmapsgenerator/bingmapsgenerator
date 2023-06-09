@@ -494,4 +494,6 @@
     "prefer_related_applications": true,
     "categories": [
     "navigation"
+  ],
+  "handle_links": "auto"
 }
