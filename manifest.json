@@ -498,5 +498,12 @@
   "handle_links": "auto",
   "launch_handler": {
     "client_mode": ["navigate-existing, auto"]
-}
+},
+  "related_applications": [
+  {
+    "platform": "windows",
+    "url": "https://bingmapsgenerator.github.io/",
+    "id": "bingmapsgenerator"
+  }
+ ]
 }
