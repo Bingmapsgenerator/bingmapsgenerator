@@ -491,5 +491,7 @@
   },
     "dir": "auto",
     "lang": "en",
-    "prefer_related_applications": true
+    "prefer_related_applications": true,
+    "categories": [
+    "navigation"
 }
