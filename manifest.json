@@ -495,5 +495,8 @@
     "categories": [
     "navigation"
   ],
-  "handle_links": "auto"
+  "handle_links": "auto",
+  "launch_handler": {
+    "client_mode": ["navigate-existing, auto"]
+}
 }
